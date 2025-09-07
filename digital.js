@@ -6,7 +6,7 @@ const start = document.getElementById("start1");
 const numerator = document.getElementById("numerator1");
 const denominator = document.getElementById("denominator1");
 
-let URLLlist = [
+let URLlist = [
   "https://www.fe-siken.com/kakomon/23_toku/q22.html",
   "https://www.ap-siken.com/kakomon/21_aki/q18.html",
   "https://www.ap-siken.com/kakomon/31_haru/q17.html",
@@ -14,7 +14,7 @@ let URLLlist = [
   "https://www.ap-siken.com/kakomon/21_haru/q74.html",
   "https://www.fe-siken.com/kakomon/24_haru/q24.html",
   "https://www.ap-siken.com/kakomon/17_haru/q27.html",
-  "https://www.ap-siken.com/kakomon/05_menjo/q13.html",
+  "https://www.fe-siken.com/kakomon/05_menjo/q13.html",
   "https://www.ap-siken.com/kakomon/30_aki/q17.html",
   "https://www.ap-siken.com/kakomon/27_haru/q17.html",
   "https://www.ap-siken.com/kakomon/18_haru/q29.html",
@@ -23,15 +23,15 @@ let URLLlist = [
   "https://www.fe-siken.com/kakomon/24_haru/q20.html",
   "https://www.ap-siken.com/kakomon/29_haru/q16.html",
   "https://www.ap-siken.com/kakomon/28_haru/q17.html",
-  "https://www.ap-siken.com/kakomon/g_moto_aki/q17.html",
-  "https://www.ap-siken.com/kakomon/g_moto_aki/q18.html",
+  "https://www.fe-siken.com/kakomon/01_aki/q17.html",
+  "https://www.fe-siken.com/kakomon/01_aki/q18.html",
   "https://www.ap-siken.com/kakomon/30_aki/q16.html",
-  "https://www.ap-siken.com/kakomon/01_aki/q18.html",
+  "https://www.fe-siken.com/kakomon/01_aki/q18.html",
   "https://www.ap-siken.com/kakomon/31_haru/q16.html",
   "https://www.ap-siken.com/kakomon/30_haru/q16.html",
   "https://www.ap-siken.com/kakomon/30_aki/q18.html",
   "https://www.ap-siken.com/kakomon/28_aki/q18.html",
-  "https://www.ap-siken.com/kakomon/28_haru/q16.html",
+  "https://www.fe-siken.com/kakomon/28_haru/q16.html",
   "https://www.ap-siken.com/kakomon/27_haru/q19.html",
   "https://www.ap-siken.com/kakomon/26_haru/q16.html",
   "https://www.ap-siken.com/kakomon/24_aki/q17.html",
@@ -40,20 +40,20 @@ let URLLlist = [
   "https://www.ap-siken.com/kakomon/27_aki/q17.html",
   "https://www.ap-siken.com/kakomon/29_aki/q20.html",
   "https://www.ap-siken.com/kakomon/29_haru/q15.html",
-  "https://www.ap-siken.com/kakomon/04_menjo/q17.html",
-  "https://www.ap-siken.com/kakomon/04_menjo/q18.html",
+  "https://www.fe-siken.com/kakomon/04_menjo/q17.html",
+  "https://www.fe-siken.com/kakomon/04_menjo/q18.html",
   "https://www.ap-siken.com/kakomon/27_haru/q20.html",
   "https://www.ap-siken.com/kakomon/26_haru/q16.html",
-  "https://www.ap-siken.com/kakomon/03_menjo/q19.html",
+  "https://www.fe-siken.com/kakomon/03_menjo/q19.html",
   "https://www.ap-siken.com/kakomon/25_haru/q19.html",
   "https://www.ap-siken.com/kakomon/24_aki/q18.html",
   "https://www.ap-siken.com/kakomon/22_aki/q21.html",
   "https://www.ap-siken.com/kakomon/15_haru/q30.html",
   "https://www.ap-siken.com/kakomon/29_aki/q16.html",
   "https://www.ap-siken.com/kakomon/29_aki/q19.html",
-  "https://www.ap-siken.com/kakomon/02_menjo/q17.html",
+  "https://www.fe-siken.com/kakomon/02_menjo/q17.html",
   "https://www.ap-siken.com/kakomon/21_aki/q05.html",
-  "https://www.ap-siken.com/kakomon/05_menjo/q10.html",
+  "https://www.fe-siken.com/kakomon/05_menjo/q10.html",
   "https://www.ap-siken.com/kakomon/24_aki/q11.html",
   "https://www.ap-siken.com/kakomon/22_haru/q21.html",
   "https://www.ap-siken.com/kakomon/21_aki/q19.html",
@@ -61,7 +61,7 @@ let URLLlist = [
   "https://www.ap-siken.com/kakomon/30_haru/q17.html",
   "https://www.ap-siken.com/kakomon/29_haru/q18.html",
   "https://www.ap-siken.com/kakomon/27_haru/q44.html",
-  "https://www.ap-siken.com/kakomon/g_moto_aki/q19.html",
+  "https://www.fe-siken.com/kakomon/01_aki/q19.html",
   "https://www.ap-siken.com/kakomon/18_haru/q47.html",
   "https://www.ap-siken.com/kakomon/20_haru/q30.html",
   "https://www.ap-siken.com/kakomon/21_haru/q22.html",
@@ -78,7 +78,7 @@ let URLLlist = [
   "https://www.ap-siken.com/kakomon/28_haru/q21.html",
   "https://www.ap-siken.com/kakomon/27_aki/q20.html",
   "https://www.ap-siken.com/kakomon/22_aki/q23.html",
-  "https://www.ap-siken.com/kakomon/g_moto_aki/q48.html",
+  "https://www.fe-siken.com/kakomon/01_aki/q48.html",
   "https://www.ap-siken.com/kakomon/25_haru/q47.html",
   "https://www.ap-siken.com/kakomon/30_haru/q19.html",
   "https://www.ap-siken.com/kakomon/27_aki/q20.html",
@@ -253,7 +253,7 @@ let number = 1;
 denominator.textContent = titleList.length
 titleV.textContent = titleList[number-1];
 data.textContent = dataList[number-1];
-start.setAttribute('href', URLLlist[number-1]);
+start.setAttribute('href', URLlist[number-1]);
 
 left.onclick = () =>{
     if (number > 1) {
@@ -261,7 +261,7 @@ left.onclick = () =>{
         numerator.textContent = number;
         titleV.textContent = titleList[number-1];
         data.textContent = dataList[number-1];
-        start.setAttribute('href', URLLlist[number-1]);
+        start.setAttribute('href', URLlist[number-1]);
     }
 }
 right.onclick = () =>{
@@ -270,7 +270,7 @@ right.onclick = () =>{
         numerator.textContent = number;
         titleV.textContent = titleList[number-1];
         data.textContent = dataList[number-1];
-        start.setAttribute('href', URLLlist[number-1]);
+        start.setAttribute('href', URLlist[number-1]);
     }
 }
 

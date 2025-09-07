@@ -14,9 +14,9 @@ let URLlist = [
   "https://www.ap-siken.com/kakomon/19_haru/q31.html",
   "https://www.ap-siken.com/kakomon/27_aki/q13.html",
   "https://www.ap-siken.com/kakomon/22_haru/q14.html",
-  "https://www.ap-siken.com/kakomon/02_menjo/q25.html",
+  "https://www.fe-siken.com/kakomon/02_menjo/q25.html",
   "https://www.ap-siken.com/kakomon/27_haru/q27.html",
-  "https://www.ap-siken.com/kakomon/30_haru/q35.html",
+  "https://www.fe-siken.com/kakomon/30_haru/q35.html",
   "https://www.fe-siken.com/kakomon/24_haru/q09.html",
   "https://www.ap-siken.com/kakomon/18_aki/q38.html",
   "https://www.ap-siken.com/kakomon/19_haru/q38.html",
@@ -24,7 +24,7 @@ let URLlist = [
   "https://www.ap-siken.com/kakomon/28_aki/q46.html",
   "https://www.ap-siken.com/kakomon/25_aki/q13.html",
   "https://www.ap-siken.com/kakomon/25_haru/q14.html",
-  "https://www.ap-siken.com/kakomon/03_menjo/q15.html",
+  "https://www.fe-siken.com/kakomon/03_menjo/q15.html",
   "https://www.ap-siken.com/kakomon/27_aki/q56.html",
   "https://www.ap-siken.com/kakomon/26_haru/q15.html",
   "https://www.ap-siken.com/kakomon/23_aki/q17.html",
@@ -41,7 +41,7 @@ let URLlist = [
   "https://www.ap-siken.com/kakomon/19_aki/q35.html",
   "https://www.ap-siken.com/kakomon/29_aki/q14.html",
   "https://www.ap-siken.com/kakomon/24_haru/q15.html",
-  "https://www.ap-siken.com/kakomon/g_moto_aki/q72.html",
+  "https://www.fe-siken.com/kakomon/01_aki/q72.html",
   "https://www.ap-siken.com/kakomon/28_haru/q41.html",
   "https://www.ap-siken.com/kakomon/24_aki/q63.html",
   "https://www.ap-siken.com/kakomon/29_haru/q63.html",
@@ -49,8 +49,8 @@ let URLlist = [
   "https://www.ap-siken.com/kakomon/28_aki/q14.html",
   "https://www.ap-siken.com/kakomon/15_haru/q37.html",
   "https://www.ap-siken.com/kakomon/20_aki/q31.html",
-  "https://www.ap-siken.com/kakomon/05_menjo/q04.html",
-  "https://www.ap-siken.com/kakomon/g_moto_aki/q15.html",
+  "https://www.fe-siken.com/kakomon/05_menjo/q04.html",
+  "https://www.fe-siken.com/kakomon/01_aki/q15.html",
   "https://www.ap-siken.com/kakomon/29_aki/q12.html",
   "https://www.ap-siken.com/kakomon/29_haru/q11.html",
   "https://www.ap-siken.com/kakomon/28_aki/q12.html",
@@ -78,9 +78,9 @@ let URLlist = [
   "https://www.ap-siken.com/kakomon/25_aki/q14.html",
   "https://www.ap-siken.com/kakomon/20_aki/q34.html",
   "https://www.ap-siken.com/kakomon/16_aki/q38.html",
-  "https://www.ap-siken.com/kakomon/07_menjo/q04.html",
+  "https://www.fe-siken.com/kakomon/07_menjo/q04.html",
   "https://www.ap-siken.com/kakomon/29_aki/q15.html",
-  "https://www.ap-siken.com/kakomon/g_moto_aki/q16.html",
+  "https://www.ap-siken.com/kakomon/01_aki/q16.html",
   "https://www.ap-siken.com/kakomon/31_haru/q14.html",
   "https://www.ap-siken.com/kakomon/30_aki/q15.html",
   "https://www.ap-siken.com/kakomon/29_haru/q14.html",
@@ -264,7 +264,7 @@ let dataList = [
   "H25 秋 14",
   "H20 秋 34",
   "H16 秋 38",
-  "R07免 04",
+  "R07 免 04",
   "H29 秋 15",
   "R 元秋 16",
   "H31 春 14",
@@ -292,7 +292,7 @@ let number = 1;
 denominator.textContent = titleList.length
 titleV.textContent = titleList[number-1];
 data.textContent = dataList[number-1];
-start.setAttribute('href', URLLlist[number-1]);
+start.setAttribute('href', URLlist[number-1]);
 
 left.onclick = () =>{
     if (number > 1) {
@@ -300,16 +300,16 @@ left.onclick = () =>{
         numerator.textContent = number;
         titleV.textContent = titleList[number-1];
         data.textContent = dataList[number-1];
-        start.setAttribute('href', URLLlist[number-1]);
+        start.setAttribute('href', URLlist[number-1]);
     }
 }
 right.onclick = () =>{
     if (number < denominator.textContent) {
         number++;
         numerator.textContent = number;
-        titleV.textContent = titleList[number-1];
+        titleV.textContent = titlelist[number-1];
         data.textContent = dataList[number-1];
-        start.setAttribute('href', URLLlist[number-1]);
+        start.setAttribute('href', URLlist[number-1]);
     }
 }
 

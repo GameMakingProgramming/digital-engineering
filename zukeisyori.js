@@ -7,26 +7,26 @@ const numerator = document.getElementById("numerator3");
 const denominator = document.getElementById("denominator3");
 
 let URLlist = [
-  "https://www.ap-siken.com/kakomon/21_aki/am1.html",
-  "https://www.ap-siken.com/kakomon/21_aki/am2.html",
-  "https://www.ap-siken.com/kakomon/21_aki/am3.html",
-  "https://www.ap-siken.com/kakomon/21_aki/am4.html",
+  "https://www.fe-siken.com/kakomon/21_aki/am1.html",
+  "https://www.fe-siken.com/kakomon/21_aki/am2.html",
+  "https://www.fe-siken.com/kakomon/21_aki/am3.html",
+  "https://www.fe-siken.com/kakomon/21_aki/am4.html",
   "https://www.fe-siken.com/kakomon/23_haru/am5.html",
   "https://www.fe-siken.com/kakomon/23_haru/am6.html",
   "https://www.fe-siken.com/kakomon/23_haru/am7.html",
   "https://www.fe-siken.com/kakomon/23_haru/am8.html",
-  "https://www.ap-siken.com/kakomon/24_haru/am9.html",
-  "https://www.ap-siken.com/kakomon/24_haru/am10.html",
-  "https://www.ap-siken.com/kakomon/24_haru/am11.html",
-  "https://www.ap-siken.com/kakomon/24_haru/am12.html",
+  "https://www.fe-siken.com/kakomon/24_haru/am9.html",
+  "https://www.fe-siken.com/kakomon/24_haru/am10.html",
+  "https://www.fe-siken.com/kakomon/24_haru/am11.html",
+  "https://www.fe-siken.com/kakomon/24_haru/am12.html",
   "https://www.fe-siken.com/kakomon/20_haru/am13.html",
   "https://www.fe-siken.com/kakomon/20_haru/am14.html",
   "https://www.fe-siken.com/kakomon/20_haru/am15.html",
   "https://www.fe-siken.com/kakomon/20_haru/am16.html",
-  "https://www.ap-siken.com/kakomon/26_haru/am17.html",
-  "https://www.ap-siken.com/kakomon/26_haru/am18.html",
-  "https://www.ap-siken.com/kakomon/26_haru/am19.html",
-  "https://www.ap-siken.com/kakomon/26_haru/am20.html"
+  "https://www.fe-siken.com/kakomon/26_haru/am17.html",
+  "https://www.fe-siken.com/kakomon/26_haru/am18.html",
+  "https://www.fe-siken.com/kakomon/26_haru/am19.html",
+  "https://www.fe-siken.com/kakomon/26_haru/am20.html"
 ];
 let titleList = [
   "10進数から2進数への変換",
@@ -56,14 +56,14 @@ let titleList = [
 let number = 1;
 denominator.textContent = titleList.length
 titleV.textContent = titleList[number-1];
-start.setAttribute('href', URLLlist[number-1]);
+start.setAttribute('href', URLlist[number-1]);
 
 left.onclick = () =>{
     if (number > 1) {
         number--;
         numerator.textContent = number;
         titleV.textContent = titleList[number-1];
-        start.setAttribute('href', URLLlist[number-1]);
+        start.setAttribute('href', URLlist[number-1]);
     }
 }
 right.onclick = () =>{
@@ -71,7 +71,7 @@ right.onclick = () =>{
         number++;
         numerator.textContent = number;
         titleV.textContent = titleList[number-1];
-        start.setAttribute('href', URLLlist[number-1]);
+        start.setAttribute('href', URLlist[number-1]);
     }
 }
 
