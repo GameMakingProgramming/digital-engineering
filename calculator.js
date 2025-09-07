@@ -307,7 +307,7 @@ right.onclick = () =>{
     if (number < denominator.textContent) {
         number++;
         numerator.textContent = number;
-        titleV.textContent = titlelist[number-1];
+        titleV.textContent = titleList[number-1];
         data.textContent = dataList[number-1];
         start.setAttribute('href', URLlist[number-1]);
     }
