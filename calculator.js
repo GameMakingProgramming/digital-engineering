@@ -1,10 +1,10 @@
-const titleV = document.getElementById("titleV");
-const data = document.getElementById("data");
-const left = document.getElementById("left");
-const right = document.getElementById("right");
-const start = document.getElementById("start");
-const numerator = document.getElementById("numerator");
-const denominator = document.getElementById("denominator");
+const titleV = document.getElementById("titleV2");
+const data = document.getElementById("data2");
+const left = document.getElementById("left2");
+const right = document.getElementById("right2");
+const start = document.getElementById("start2");
+const numerator = document.getElementById("numerator2");
+const denominator = document.getElementById("denominator2");
 
 let URLlist = [
   "https://www.ap-siken.com/kakomon/28_aki/q13.html",

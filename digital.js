@@ -1,10 +1,10 @@
-const titleV = document.getElementById("titleV");
-const data = document.getElementById("data");
-const left = document.getElementById("left");
-const right = document.getElementById("right");
-const start = document.getElementById("start");
-const numerator = document.getElementById("numerator");
-const denominator = document.getElementById("denominator");
+const titleV = document.getElementById("titleV1");
+const data = document.getElementById("data1");
+const left = document.getElementById("left1");
+const right = document.getElementById("right1");
+const start = document.getElementById("start1");
+const numerator = document.getElementById("numerator1");
+const denominator = document.getElementById("denominator1");
 
 let URLLlist = [
   "https://www.fe-siken.com/kakomon/23_toku/q22.html",
