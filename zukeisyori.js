@@ -13,6 +13,7 @@ let URLlist = [
   "https://www.fe-siken.com/s/kakomon/24_aki/q1.html",
   "https://www.fe-siken.com/s/kakomon/01_aki/q30.html",
   "https://www.fe-siken.com/s/kakomon/24_haru/q34.html",
+  "https://www.fe-siken.com/s/kakomon/21_haru/q36.html",
   "https://www.fe-siken.com/s/kakomon/25_aki/q33.html",
   "https://www.fe-siken.com/s/kakomon/29_aki/q35.html",
   "https://www.fe-siken.com/s/kakomon/31_haru/q32.html",
@@ -24,7 +25,8 @@ let URLlist = [
   "https://www.fe-siken.com/s/kakomon/25_aki/q9.html",
   "https://www.fe-siken.com/s/kakomon/19_aki/q21.html",
   "https://www.fe-siken.com/s/kakomon/26_haru/q10.html",
-  "https://www.fe-siken.com/s/kakomon/23_aki/q11.html"
+  "https://www.fe-siken.com/s/kakomon/23_aki/q11.html",
+  "https://www.fe-siken.com/s/kakomon/14_haru/q24.html"
 ];
 let titleList = [
   "10進数から2進数への変換",
