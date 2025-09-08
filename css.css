@@ -110,6 +110,10 @@ html, body{
 
 .start{
   font-size: 30px;
+  padding: 0 30px;
+  background-color:rgb(212, 251, 219);
+  border: 2px solid #4BD865;
+  border-radius: 10px;
 }
 
 .arrow-l{

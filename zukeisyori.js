@@ -51,11 +51,34 @@ let titleList = [
   "主記憶の実行アクセス時間"
 ];
 
+let dataList = [
+  "H27 秋 1",
+  "H30 春 1",
+  "H29 秋 1",
+  "H24 秋 1",
+  "H01 秋 30",
+  "H24 春 34",
+  "H21 春 36",
+  "H25 秋 33",
+  "H29 秋 35",
+  "H31 春 32",
+  "H26 秋 34",
+  "H28 春 34",
+  "H25 春 9",
+  "H22 秋 9",
+  "H19 秋 19",
+  "H25 秋 9",
+  "H19 秋 21",
+  "H26 春 10",
+  "H23 秋 11",
+  "H14 春 24"
+];
 
 
 let number = 1;
 denominator.textContent = titleList.length
 titleV.textContent = titleList[number-1];
+data.textContent = dataList[number-1];
 start.setAttribute('href', URLlist[number-1]);
 
 left.onclick = () =>{
@@ -63,6 +86,7 @@ left.onclick = () =>{
         number--;
         numerator.textContent = number;
         titleV.textContent = titleList[number-1];
+        data.textContent = dataList[number-1];
         start.setAttribute('href', URLlist[number-1]);
     }
 }
@@ -71,6 +95,7 @@ right.onclick = () =>{
         number++;
         numerator.textContent = number;
         titleV.textContent = titleList[number-1];
+        data.textContent = dataList[number-1];
         start.setAttribute('href', URLlist[number-1]);
     }
 }
