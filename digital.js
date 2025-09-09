@@ -6,6 +6,9 @@ const start = document.getElementById("start1");
 const numerator = document.getElementById("numerator1");
 const denominator = document.getElementById("denominator1");
 
+const toggle1 = document.getElementById("toggle1");
+const checkbox1 = document.getElementById("checkbox1");
+
 let URLlist = [
   "https://www.fe-siken.com/kakomon/23_toku/q22.html",
   "https://www.ap-siken.com/kakomon/21_aki/q18.html",
@@ -247,32 +250,66 @@ let dataList = [
 "H30 春 26"
 ];
 
+// チェック
+let checkList = [];
+for (let index = 0; index < titleList.length; index++) {
+    checkList.push(false);
+}
 
+checkbox1.onclick = () => {
+    if (checkbox1.checked) {
+        checkList[number-1] = true;
+    } else {
+        checkList[number-1] = false;
+    }
+}
 
+let toggleBtn = false;
+let checkNumberList = [];
+
+toggle1.onclick = () => {
+    if (toggle1.checked) {
+        checkList.forEach((e, i) => {
+            if (e) {
+                checkNumberList.push(i);
+            }
+        });
+        toggleBtn = true;
+    } else {
+        checkNumberList = [];
+        toggleBtn = false;
+    }
+}
+
+// 問題
 let number = 1;
 denominator.textContent = titleList.length
 titleV.textContent = titleList[number-1];
 data.textContent = dataList[number-1];
 start.setAttribute('href', URLlist[number-1]);
 
-left.onclick = () =>{
+left.onclick = () => {
     if (number > 1) {
         number--;
-        numerator.textContent = number;
-        titleV.textContent = titleList[number-1];
-        data.textContent = dataList[number-1];
-        start.setAttribute('href', URLlist[number-1]);
+        select();
     }
 }
-right.onclick = () =>{
+right.onclick = () => {
     if (number < denominator.textContent) {
         number++;
-        numerator.textContent = number;
-        titleV.textContent = titleList[number-1];
-        data.textContent = dataList[number-1];
-        start.setAttribute('href', URLlist[number-1]);
+        select();
     }
 }
 
 
-
+function select(list) {
+    numerator.textContent = number;
+        titleV.textContent = titleList[number-1];
+        data.textContent = dataList[number-1];
+        start.setAttribute('href', URLlist[number-1]);
+        if (checkList[number-1]) {
+            checkbox1.checked = true;
+        } else {
+            checkbox1.checked = false;
+        }
+}
