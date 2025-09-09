@@ -29,7 +29,7 @@ let URLlist = [
   "https://www.fe-siken.com/kakomon/26_haru/q15.html",
   "https://www.fe-siken.com/kakomon/23_aki/q17.html",
   "https://www.fe-siken.com/kakomon/18_haru/q33.html",
-  "https://www.fe-siken.com/kakomon/23_haru/q15.html",
+  "https://www.fe-siken.com/kakomon/23_toku/q15.html",
   "https://www.fe-siken.com/kakomon/16_aki/q33.html",
   "https://www.fe-siken.com/kakomon/31_haru/q13.html",
   "https://www.fe-siken.com/kakomon/29_aki/q13.html",
@@ -66,7 +66,7 @@ let URLlist = [
   "https://www.fe-siken.com/kakomon/25_haru/q16.html",
   "https://www.fe-siken.com/kakomon/20_aki/q33.html",
   "https://www.fe-siken.com/kakomon/25_aki/q09.html",
-  "https://www.fe-siken.com/kakomon/23_haru/q19.html",
+  "https://www.fe-siken.com/kakomon/23_toku/q19.html",
   "https://www.fe-siken.com/kakomon/30_haru/q15.html",
   "https://www.fe-siken.com/kakomon/29_haru/q12.html",
   "https://www.fe-siken.com/kakomon/29_haru/q13.html",
@@ -89,7 +89,7 @@ let URLlist = [
   "https://www.fe-siken.com/kakomon/26_aki/q14.html",
   "https://www.fe-siken.com/kakomon/24_aki/q15.html",
   "https://www.fe-siken.com/kakomon/24_haru/q17.html",
-  "https://www.fe-siken.com/kakomon/23_haru/q16.html",
+  "https://www.fe-siken.com/kakomon/23_toku/q16.html",
   "https://www.fe-siken.com/kakomon/22_aki/q19.html",
   "https://www.fe-siken.com/kakomon/22_haru/q16.html",
   "https://www.fe-siken.com/kakomon/21_aki/q16.html",
@@ -312,4 +312,5 @@ right.onclick = () =>{
         start.setAttribute('href', URLlist[number-1]);
     }
 }
+
 
