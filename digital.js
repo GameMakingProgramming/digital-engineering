@@ -35,7 +35,7 @@ let URLlist = [
   "https://www.fe-siken.com/kakomon/27_haru/q19.html",
   "https://www.ap-siken.com/kakomon/26_haru/q16.html",
   "https://www.fe-siken.com/kakomon/24_aki/q17.html",
-  "https://www.fe-siken.com/kakomon/23_haru/q18.html",
+  "https://www.fe-siken.com/kakomon/23_toku/q18.html",
   "https://www.fe-siken.com/kakomon/29_haru/q19.html",
   "https://www.fe-siken.com/kakomon/27_aki/q17.html",
   "https://www.fe-siken.com/kakomon/29_aki/q20.html",
@@ -273,4 +273,5 @@ right.onclick = () =>{
         start.setAttribute('href', URLlist[number-1]);
     }
 }
+
 
