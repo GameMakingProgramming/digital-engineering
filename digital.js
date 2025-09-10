@@ -1,3 +1,4 @@
+const body = document.getElementById("body1");
 const titleV = document.getElementById("titleV1");
 const data = document.getElementById("data1");
 const left = document.getElementById("left1");
@@ -6,8 +7,8 @@ const start = document.getElementById("start1");
 const numerator = document.getElementById("numerator1");
 const denominator = document.getElementById("denominator1");
 
-const toggle1 = document.getElementById("toggle1");
-const checkbox1 = document.getElementById("checkbox1");
+const toggle = document.getElementById("toggle1");
+const checkbox = document.getElementById("checkbox1");
 
 let URLlist = [
   "https://www.fe-siken.com/s/kakomon/23_toku/q22.html",
@@ -209,7 +210,7 @@ let dataList = [
 "H26 春 16",
 "R03 免 19",
 "H25 春 19",
-"H24 秋１８",
+"H24 秋 18",
 "H22 秋 21",
 "H15 春 30",
 "H29 秋 16",
@@ -256,60 +257,89 @@ for (let index = 0; index < titleList.length; index++) {
     checkList.push(false);
 }
 
-checkbox1.onclick = () => {
-    if (checkbox1.checked) {
+checkbox.onclick = () => {
+    if (checkbox.checked) {
         checkList[number-1] = true;
     } else {
         checkList[number-1] = false;
     }
 }
 
+// トグルボタン
 let toggleBtn = false;
 let checkNumberList = [];
 
-toggle1.onclick = () => {
-    if (toggle1.checked) {
+toggle.onclick = () => {
+    if (toggle.checked) {
         checkList.forEach((e, i) => {
             if (e) {
                 checkNumberList.push(i);
             }
         });
+        body.style.backgroundColor = "rgb(255, 195, 146)";
         toggleBtn = true;
+        set(checkNumberList[0], checkNumberList);
     } else {
+        body.style.backgroundColor = "rgb(197, 255, 241)";
         checkNumberList = [];
         toggleBtn = false;
+        set(0, titleList);
     }
 }
 
-// 問題
-let number = 1;
-denominator.textContent = titleList.length
-titleV.textContent = titleList[number-1];
-data.textContent = dataList[number-1];
-start.setAttribute('href', URLlist[number-1]);
-
-left.onclick = () => {
-    if (number > 1) {
-        number--;
-        select();
-    }
-}
-right.onclick = () => {
-    if (number < denominator.textContent) {
-        number++;
-        select();
-    }
-}
-
-
-function select(list) {
+// セット
+function set(i, list) {
+    number = 1;
     numerator.textContent = number;
-        titleV.textContent = titleList[number-1];
-        data.textContent = dataList[number-1];
-        start.setAttribute('href', URLlist[number-1]);
-        if (checkList[number-1]) {
-            checkbox1.checked = true;
-        } else {
-            checkbox1.checked = false;
+    denominator.textContent = list.length
+    console.log(titleList[i], i);
+    titleV.textContent = titleList[i];
+    data.textContent = dataList[i];
+    start.setAttribute('href', URLlist[i]);
+}
+
+let number = 1;
+set(number-1, titleList);
+
+// 選択
+
+if (toggleBtn) {
+    left.onclick = () => {
+        if (number > 1) {
+            number--;
+            select(checkNumberList[number-1]);
         }
+    }
+    right.onclick = () => {
+        if (number < denominator.textContent) {
+            number++;
+            select(checkNumberList[number-1]);
+        }
+    }
+} else {
+    left.onclick = () => {
+        if (number > 1) {
+            number--;
+            select(number-1);
+        }
+    }
+    right.onclick = () => {
+        if (number < denominator.textContent) {
+            number++;
+            select(number-1);
+        }
+    }
+}
+
+
+function select(i) {
+    numerator.textContent = number;
+    titleV.textContent = titleList[i];
+    data.textContent = dataList[i];
+    start.setAttribute('href', URLlist[i]);
+    if (checkList[i]) {
+        checkbox.checked = true;
+    } else {
+        checkbox.checked = false;
+    }
 }
