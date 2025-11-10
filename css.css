@@ -1,6 +1,7 @@
 html, body{
     height: 100%;
     background-color: rgb(197, 255, 241);
+    transition: background-color 1s ease-in-out;
 }
 
 .back{
