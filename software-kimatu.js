@@ -10,6 +10,7 @@ const denominator = document.getElementById("denominator1");
 const toggle = document.getElementById("toggle1");
 const checkbox = document.getElementById("checkbox1");
 
+
 let URLlist = [
     "https://www.fe-siken.com/s/kakomon/30_aki/q51.html",
     "https://www.fe-siken.com/s/kakomon/28_haru/q52.html",
@@ -338,7 +339,7 @@ let dataList = [
     "H25 秋 51",
     "H31 春 52",
     "R01 秋 53",
-    "AP R02 秋 53",
+    "R02 秋 53 応用情報",
     "pm R06 秋 06",
     "R04 免 51",
     "R02 免 53",
@@ -351,7 +352,7 @@ let dataList = [
     "H26 秋 52",
     "H25 春 52",
     "H23 秋 51",
-    "AP H22 春 52",
+    "応H22 春 52",
     "H21 春 51",
     "H20 秋 45",
     "H20 春 75",
@@ -372,14 +373,14 @@ let dataList = [
     "R03 免 53",
     "R03 免 51",
     "R02 免 51",
-    "AP R06 春 51",
-    "AP H29 春 51",
+    "R06 春応用 51",
+    "H29 春応用 51",
     "H25 秋 53",
     "pm R04 秋 07",
     "pm R02 秋 05",
     "pm H28 春 08",
     "pm R06 秋 08",
-    "R01 秋 53",
+    "R 元秋 53",
     "H30 春 54",
     "H30 秋 54",
     "H29 秋 51",
@@ -438,8 +439,8 @@ let dataList = [
     "R03 免 56",
     "H30 秋 57",
     "H25 秋 56",
-    "R01 秋 74",
-    "R01 秋 57",
+    "R 元秋 74",
+    "R 元秋 57",
     "H23 秋 61",
     "H24 春 42",
     "R02 免 57",
@@ -462,8 +463,8 @@ let dataList = [
     "H29 秋 57",
     "R02 免 59",
     "R02 免 60",
-    "R01 秋 59",
-    "R01 秋 60",
+    "R 元秋 59",
+    "R 元秋 60",
     "H31 春 59",
     "H30 秋 60",
     "H30 春 58",
@@ -483,6 +484,8 @@ let dataList = [
     "H21 秋 58",
     "H21 春 59"
 ];
+
+   
 
 // チェック
 let checkList = [];
