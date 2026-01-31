@@ -24,7 +24,7 @@ let URLlist = [
     "https://www.fe-siken.com/s/kakomon/31_haru/q52.html",
     "https://www.fe-siken.com/s/kakomon/01_aki/q53.html",
     "https://www.ap-siken.com/s/kakomon/02_aki/q53.html",
-    "https://www.pm-siken.com/s/kakomon/06_aki/q06.html",
+    "https://www.pm-siken.com/kakomon/06_aki/am2_6.html",
     "https://www.fe-siken.com/s/kakomon/04_menjo/q51.html",
     "https://www.fe-siken.com/s/kakomon/02_menjo/q53.html",
     "https://www.fe-siken.com/s/kakomon/01_aki/q52.html",
@@ -60,10 +60,10 @@ let URLlist = [
     "https://www.ap-siken.com/s/kakomon/06_haru/q51.html",
     "https://www.ap-siken.com/s/kakomon/29_haru/q51.html",
     "https://www.fe-siken.com/s/kakomon/25_aki/q53.html",
-    "https://www.pm-siken.com/s/kakomon/04_aki/q07.html",
-    "https://www.pm-siken.com/s/kakomon/02_aki/q05.html",
-    "https://www.pm-siken.com/s/kakomon/28_haru/q08.html",
-    "https://www.pm-siken.com/s/kakomon/06_aki/q08.html",
+    "https://www.pm-siken.com/kakomon/04_aki/am2_7.html",
+    "https://www.pm-siken.com/kakomon/02_aki/am2_5.html",
+    "https://www.pm-siken.com/kakomon/28_haru/am2_8.html",
+    "https://www.pm-siken.com/kakomon/06_aki/am2_8.html",
     "https://www.fe-siken.com/s/kakomon/01_aki/q53.html",
     "https://www.fe-siken.com/s/kakomon/30_haru/q54.html",
     "https://www.fe-siken.com/s/kakomon/30_aki/q54.html",
@@ -168,6 +168,7 @@ let URLlist = [
     "https://www.fe-siken.com/s/kakomon/21_aki/q58.html",
     "https://www.fe-siken.com/s/kakomon/21_haru/q59.html"
 ];
+   
 
 let titleList = [
     "WBS を使用する目的",
